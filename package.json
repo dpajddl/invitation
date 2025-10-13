@@ -8,7 +8,9 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",      // ✅ 배포 전에 자동 빌드
+  "deploy": "gh-pages -d dist"       // ✅ dist 폴더를 gh-pages 브랜치에 업로드
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
