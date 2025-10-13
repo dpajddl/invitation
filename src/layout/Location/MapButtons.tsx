@@ -7,8 +7,8 @@ const MapButtons = () => {
 
   return (
     <MapButtonWrapper>
-      <Button onClick={() => window.open(naverMap)}>네이버 지도</Button>
-      <Button onClick={() => window.open(kakaoMap)}>카카오맵</Button>
+      <Button onClick={() => window.open(naverMap)}>네이버 지도에서 보기</Button>
+      <Button onClick={() => window.open(kakaoMap)}>카카오맵에서 보기</Button>
     </MapButtonWrapper>
   );
 };

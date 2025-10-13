@@ -14,6 +14,7 @@ const Address = () => {
             <PointTitle>{title}</PointTitle>
             <Caption>{desc}</Caption>
           </Way>
+  
         );
       })}
     </WayWrapper>
