@@ -1,6 +1,6 @@
 {
   "name": "wedding-invitation",
-  "homepage": "https://dpajddl.github.io/invitation"
+  "homepage": "https://dpajddl.github.io/invitation",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,8 +9,8 @@
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "predeploy": "npm run build",      // ✅ 배포 전에 자동 빌드
-  "deploy": "gh-pages -d dist"       // ✅ dist 폴더를 gh-pages 브랜치에 업로드
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
@@ -21,6 +21,7 @@
     "eslint-plugin-import": "^2.28.1",
     "eslint-plugin-react": "^7.33.2",
     "firebase": "^10.5.2",
+    "gh-pages": "^6.3.0",
     "js-confetti": "^0.11.0",
     "photoswipe": "^5.4.2",
     "react": "^18.2.0",
