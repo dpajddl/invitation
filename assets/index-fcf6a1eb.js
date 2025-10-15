@@ -1823,14 +1823,14 @@ FIREBASE: `))}restoreState_(){this.tryAuth(),this.tryAppCheck();for(const e of t
   border: 1px solid #dfdfdf;
   outline: none;
   box-shadow: none;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   cursor: pointer;
   background: white;
   display: flex;
   align-items: center;
   color: #1a1a1a;
   text-decoration: none;
-  gap: 2px;
+  gap: 3px;
 `.withComponent("a"),bk=({isVisible:t})=>{const{emojis:e}=un,[n,i]=T.useState(0);T.useEffect(()=>{const a=tc(Co,"likes");$x(a,u=>{i(Number(u.val()))})},[]);const r=()=>{navigator.clipboard.writeText(window.location.href).then(()=>{alert("주소가 복사되었습니다.😉😉")},()=>{alert("주소 복사에 실패했습니다.🥲🥲")})},s=()=>{o.addConfetti({emojis:e});const a=tc(Co);jx(a,{likes:ik(1)}),console.log(Co.app.options.databaseURL)},o=new Nk;return q(Lk,{isVisible:t,children:[q(Gr,{onClick:s,children:[P(Ak,{fill:"#e88ca6"}),n||""]}),q(Gr,{onClick:r,children:[P(Rk,{fill:"#e88ca6"}),"공유"]}),q(Gr,{onClick:()=>{window.scrollTo({top:0,behavior:"smooth"})},children:[P(Ok,{fill:"#e88ca6"}),"위로"]})]})},Lk=L.nav`
   min-width: 280px;
   position: fixed;
@@ -1961,7 +1961,7 @@ FIREBASE: `))}restoreState_(){this.tryAuth(),this.tryAppCheck();for(const e of t
   flex-direction: column;
   text-align: left;
 `,AP=()=>{const{naverMap:t,kakaoMap:e}=un.mapInfo;return q(RP,{children:[P(Gr,{onClick:()=>window.open(t),children:"네이버 지도에서 보기"}),P(Gr,{onClick:()=>window.open(e),children:"카카오맵에서 보기"})]})},RP=L.div`
-  margin: 8px;
+  margin: 10px;
   display: flex;
   gap: 8px;
   justify-content: center;
