@@ -7,14 +7,14 @@ const Button = styled.button`
   border: 1px solid #dfdfdf;
   outline: none;
   box-shadow: none;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   cursor: pointer;
   background: white;
   display: flex;
   align-items: center;
   color: #1a1a1a;
   text-decoration: none;
-  gap: 2px;
+  gap: 3px;
 `.withComponent('a');
 
 export default Button;

@@ -5,14 +5,14 @@ import { getDatabase } from 'firebase/database';
 // 가이드에 따라 firebase config를 설정합니다.
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCxc00PyEONEW7m5vOnGcj29AqnTtpSf8g",
-  authDomain: "invitation-156d7.firebaseapp.com",
-  projectId: "invitation-156d7",
-  storageBucket: "invitation-156d7.firebasestorage.app",
-  messagingSenderId: "735998918121",
-  appId: "1:735998918121:web:ba9138ddb5c3603504df78",
-  databaseURL: "https://invitation-156d7-default-rtdb.firebaseio.com/"
-};
+  apiKey: import.meta.env.VITE_apiKey,
+  authDomain: import.meta.env.VITE_authDomain,
+  projectId: import.meta.env.VITE_projectId,
+  storageBucket: import.meta.env.VITE_storageBucket,
+  messagingSenderId: import.meta.env.VITE_messagingSenderId,
+  appId: import.meta.env.VITE_appId,
+  databaseURL: import.meta.env.VITE_databaseURL
+}
 
 export const firebaseApp = initializeApp(firebaseConfig);
 export const realtimeDb = getDatabase(firebaseApp);

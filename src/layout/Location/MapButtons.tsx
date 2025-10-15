@@ -16,7 +16,7 @@ const MapButtons = () => {
 export default MapButtons;
 
 const MapButtonWrapper = styled.div`
-  margin: 8px;
+  margin: 10px;
   display: flex;
   gap: 8px;
   justify-content: center;
