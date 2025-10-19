@@ -3,31 +3,42 @@ import styled from '@emotion/styled';
 import { push, ref, serverTimestamp } from 'firebase/database';
 import { realtimeDb } from '../../firebase.ts';
 
-// TODO: 방명록 기능 사용시, realtime db에 guestbook 추가
 const guestbookRef = ref(realtimeDb, 'guestbook');
 
-const CommentForm = () => {
+interface CommentFormProps {
+  closeModal?: () => void; // 모달 닫기용 prop
+}
+
+const CommentForm = ({ closeModal }: CommentFormProps) => {
   const [name, setName] = useState<string>('');
   const [message, setMessage] = useState<string>('');
+  const [password, setPassword] = useState<string>('');
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    if (!name || !message) {
-      alert('이름과 메시지를 채워주세요. 🥹');
-    } else {
-      e.preventDefault();
-      // TODO: 이름, 메시지, 생성시간, 작성날짜 저장.
-      const guestbookMessage = {
-        sender: name,
-        message: message,
-        createdAt: serverTimestamp(),
-        date: new Date().toLocaleString(),
-      };
-      void push(guestbookRef, guestbookMessage);
-      
-      alert('메시지를 보냈습니다. 💌');
-      setName('');
-      setMessage('');
+    e.preventDefault();
+
+    if (!name || !message || !password) {
+      alert('이름, 메시지, 비밀번호를 모두 입력해주세요. 🥹');
+      return;
     }
+
+    const guestbookMessage = {
+      sender: name,
+      message,
+      password, // 삭제 확인용
+      createdAt: serverTimestamp(),
+      date: new Date().toLocaleString(),
+    };
+
+    void push(guestbookRef, guestbookMessage);
+
+    alert('메시지를 보냈습니다. 💌');
+
+    setName('');
+    setMessage('');
+    setPassword('');
+
+    closeModal?.(); // 모달이면 닫기
   };
 
   return (
@@ -43,57 +54,58 @@ const CommentForm = () => {
         value={message}
         onChange={(e) => setMessage(e.target.value)}
       />
+      <PasswordInput
+        placeholder="삭제용 비밀번호"
+        type="password"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+      />
       <SubmitButton type="submit">등록</SubmitButton>
     </FormWrapper>
   );
 };
 
+export default CommentForm;
+
+// 스타일 그대로 유지
 const FormWrapper = styled.form`
   display: flex;
   flex-direction: column;
-  gap: 2px;
-  overflow: visible;
-  align-items: center;
+  gap: 4px;
+  width: 100%;
 `;
 
 const NameInput = styled.input`
   width: 100%;
-  box-sizing: border-box;
+  padding: 6px 8px;
   border-radius: 4px;
-  padding: 4px;
-  font-size: 1rem;
-  line-height: 1;
-  outline: none;
   border: 1px solid #ccc;
-  font-family: inherit;
-  font-weight: 300;
+  font-size: 0.95rem;
 `;
 
 const MessageInput = styled.textarea`
   width: 100%;
-  height: 100%;
-  box-sizing: border-box;
+  height: 80px;
+  padding: 6px 8px;
   border-radius: 4px;
-  padding: 4px;
-  font-size: 1rem;
-  line-height: 1.5;
-  outline: none;
   border: 1px solid #ccc;
   resize: none;
-  font-family: inherit;
-  font-weight: 300;
+  font-size: 0.95rem;
+`;
+
+const PasswordInput = styled.input`
+  width: 100%;
+  padding: 6px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
 `;
 
 const SubmitButton = styled.button`
   width: 100%;
-  padding: 6px 12px;
+  padding: 8px;
   border-radius: 4px;
-  font-size: 1rem;
-  line-height: 1.5;
-  border: 1px solid lightgray;
-  background-color: white;
-  font-family: inherit;
-  font-weight: inherit;
-  color: inherit;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
 `;
-export default CommentForm;
