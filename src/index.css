@@ -1,5 +1,5 @@
 body {
-  font-family: SUITE-Regular,Sweet, BookkMyungjo , KkuBulLim, OngleipParkDahyeon,Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: SUITE-Regular,Sweet, BookkMyungjo , KkuBulLim, OngleipParkDahyeon,Inter, system-ui, Avenir, Helvetica, Arial;
   line-height: 1.5;
   font-weight: 400;
 
@@ -60,4 +60,12 @@ body {
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Bold.woff2') format('woff2');
   font-weight: 700;
   font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'KotraGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/KOTRA_GOTHIC.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
 }

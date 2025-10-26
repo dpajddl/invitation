@@ -4,7 +4,7 @@ export const Heading1 = styled.p`
   font-family: Sweet, serif;
   font-size: 1.5rem;
   margin: 10px;
-  color: #f58e27;
+  color: #000000ff;
   white-space: pre-line;
 `;
 
