@@ -48,7 +48,7 @@ Error generating stack: `+s.message+`
   font-family: Sweet, serif;
   font-size: 1.5rem;
   margin: 10px;
-  color: #f58e27;
+  color: #000000ff;
   white-space: pre-line;
 `,W1=R.p`
   font-size: 1rem;
@@ -82,9 +82,9 @@ Error generating stack: `+s.message+`
 서로에게 알맞은 온도로 따뜻하던 우리.
 부부로서 첫걸음을 내딛는 그 설렘의 순간에
 소중한 분들을 초대합니다.
-`,host:{groom:{name:"이규승",relation:"아들",parents:[{relation:"아버지",name:"이아빠"},{relation:"어머니",name:"이엄마"}]},bride:{name:"신예원",relation:"딸",parents:[{relation:"아버지",name:"신재철"},{relation:"어머니",name:"이정기"}]}},eventDetail:`2026년 8월 29일 (토) 12:30
+`,host:{groom:{name:"이규승",relation:"아들",parents:[{relation:"아버지",name:"이희근"},{relation:"어머니",name:"송경희"}]},bride:{name:"신예원",relation:"딸",parents:[{relation:"아버지",name:"신재철"},{relation:"어머니",name:"이정기"}]}},eventDetail:`2026년 8월 29일 (토) 12:30
  HD현대 글로벌 R&D센터
- 1층 아산홀`},H1=[{host:"신랑측",accountInfo:[{name:"이규승",relation:"신랑",bank:"카카오뱅크",account:"1234-56-789012",kakaopayAccount:"",tossAccount:""},{name:"장아빠",relation:"아버지",bank:"농협",account:"123-45-678901"},{name:"이엄마",relation:"어머니",bank:"농협",account:"123-45-678901"}]},{host:"신부측",accountInfo:[{name:"신예원",relation:"신부",bank:"토스뱅크",account:"1234-5678-9012",kakaopayAccount:"",tossAccount:""},{name:"신재철",relation:"아버지",bank:"농협",account:"123-45-678901"},{name:"이정기",relation:"어머니",bank:"농협",account:"123-45-678901"}]}],V1={address1:"HD현대 글로벌 R&D센터",address2:`경기 성남시 분당구 분당수서로 477
+ 1층 아산홀`},H1=[{host:"신랑측",accountInfo:[{name:"이규승",relation:"신랑",bank:"카카오뱅크",account:"1234-56-789012",kakaopayAccount:"",tossAccount:""},{name:"이희근",relation:"아버지",bank:"농협",account:"123-45-678901"},{name:"송경희",relation:"어머니",bank:"농협",account:"123-45-678901"}]},{host:"신부측",accountInfo:[{name:"신예원",relation:"신부",bank:"토스뱅크",account:"1234-5678-9012",kakaopayAccount:"",tossAccount:""},{name:"신재철",relation:"아버지",bank:"농협",account:"123-45-678901"},{name:"이정기",relation:"어머니",bank:"농협",account:"123-45-678901"}]}],V1={address1:"HD현대 글로벌 R&D센터",address2:`경기 성남시 분당구 분당수서로 477
 1층 아산홀 
 `,naverMap:"https://naver.me/58NdvzIz",kakaoMap:"https://place.map.kakao.com/2106694267",lat:37.376630748157744,lon:127.10448151734744},$1=[{title:"예식 당일 주차는 무료입니다.",desc:`
 `},{title:"대중교통",desc:`[신분당선/수인분당선] 정자역 2번 출구
