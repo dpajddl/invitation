@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import data from 'data.json';
 import Host from '../Contact/Host'; 
 // import RoundButton from '@/components/RoundButton';
-import { Caption, Paragraph } from '@/components/Text';
+import { Paragraph } from '@/components/Text';
 
 
 const Invitation = () => {
