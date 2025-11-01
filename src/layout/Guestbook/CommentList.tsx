@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { onValue, query, ref, orderByChild, remove } from 'firebase/database';
-import { realtimeDb } from '../../firebase.ts';
+import { realtimeDb } from '../../firebase';
 import styled from '@emotion/styled';
 
 const guestbookRef = query(ref(realtimeDb, 'guestbook'), orderByChild('createdAt'));
@@ -118,14 +118,15 @@ export default CommentList;
 const MessageBox = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 10px;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
-  padding: 8px 10px;
-  margin-bottom: 10px;
+  padding: 10px 10px;
+  margin-bottom: 20px;
   background: #fff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
   word-break: break-word;
+
 `;
 
 const MessageContent = styled.div`

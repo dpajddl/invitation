@@ -1,13 +1,13 @@
 import { Gallery, Item } from 'react-photoswipe-gallery';
 import 'photoswipe/style.css';
-import images from '@/layout/Gallery/Images.ts';
+import images from '@/layout/Gallery/Images';
 
 const PhotoGallery = () => {
   const smallItemStyles: React.CSSProperties = {
     cursor: 'pointer',
     objectFit: 'cover', // 전체 이미지가 보이도록 맞추고 싶을 때는 contain / 비율 유지하고 싶을 때는 cover
-    width: '100px',
-    height: '150px',
+    width: '100%',
+    aspectRatio: '1 / 1', 
   };
 
   return (
@@ -15,8 +15,9 @@ const PhotoGallery = () => {
       <div
         style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(3, 0fr)',
-          gridGap: 2,
+          gridTemplateColumns: 'repeat(auto-fit, minmax(100px, 1fr))',
+          gridGap: '8px',
+          width: '100%',
         }}>
         {images.map((image, index) => {
           return (

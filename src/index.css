@@ -1,9 +1,9 @@
 body {
-  font-family: SUITE-Regular,Sweet, BookkMyungjo , KkuBulLim, OngleipParkDahyeon,Inter, system-ui, Avenir, Helvetica, Arial;
+  font-family: Suit-normal, SUITE-Regular,Inter, WorkSans,CucumberSalad,system-ui, GabiaSai,Avenir, Helvetica, Arial,Worksans;
   line-height: 1.5;
   font-weight: 400;
 
-  color: rgba(255, 255, 255, 0.87);
+  color: rgba(252, 251, 247, 0.87);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -16,7 +16,7 @@ body {
   min-width: 280px;
   display: flex;
   justify-content: center;
-  background-color: #E0E7D9;
+  background-color: #f5f1dc;
 }
 
 @font-face {
@@ -26,38 +26,17 @@ body {
   font-style: normal;
 }
 
+
+
 @font-face {
-  font-family: 'SUITE-Regular';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'BookkMyungjo';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Bd.woff2') format('woff2');
-  font-weight: 700;
+  font-family: 'Suit';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-ExtraLight.woff2') format('woff2');
+  font-weight: 200;
   font-display: swap;
 }
-
-
 @font-face {
-  font-family: 'KkuBulLim';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2410-1@1.0/BMkkubulimTTF-Regular.woff2') format('woff2');
-  font-weight: normal;
-  font-display: swap;
-}
-
-
-@font-face {
-  font-family: 'OngleipParkDahyeon';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2411-3@1.0/Ownglyph_ParkDaHyun.woff2') format('woff2');
-  font-weight: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Sweet';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Bold.woff2') format('woff2');
+  font-family: 'Suit-normal';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
   font-weight: 700;
   font-display: swap;
 }
@@ -68,4 +47,26 @@ body {
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/KOTRA_GOTHIC.woff') format('woff');
     font-weight: normal;
     font-display: swap;
+}
+
+@font-face {
+  font-family: 'WorkSans';
+  src: url('https://fonts.gstatic.com/s/worksans/v12/QGYsz_wNahGAdqQ43Rh_fKdp.woff2') format('woff2');
+  font-weight: 400; /* normal */
+  font-style: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CucumberSalad';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-EF@1.0/EF_cucumbersalad.woff2') format('woff2');
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GabiaSai';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2510-1@1.0/GabiaSai-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-display: swap;
 }

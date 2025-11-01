@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import styled from '@emotion/styled';
-import CommentForm from './CommentForm.tsx';
+import CommentForm from './CommentForm';
 import CommentList from './CommentList';
-import { Heading2 } from '@/components/Text.tsx';
+import { Heading2 } from '@/components/Text';
 
 const Guestbook = () => {
   const [isFormOpen, setIsFormOpen] = useState(false); // 모달 열기 상태
@@ -37,6 +37,7 @@ const GuestBookWrapper = styled.div`
   gap: 12px;
   margin-bottom: 50px;
   align-items: center; /* 가운데 정렬 */
+  
 `;
 
 const OpenFormButton = styled.button`

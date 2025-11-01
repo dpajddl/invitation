@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import data from 'data.json';
-import { Caption, PointTitle } from '@/components/Text.tsx';
-import { ILocationInfo } from '@/types/data.ts';
+import { Caption, PointTitle } from '@/components/Text';
+import { ILocationInfo } from '@/types/data';
 
 const Address = () => {
   const { locationInfo } = data;
@@ -13,7 +13,9 @@ const Address = () => {
           <Way key={title}>
             <PointTitle>{title}</PointTitle>
             <Caption>{desc}</Caption>
+            <Divider />
           </Way>
+          
   
         );
       })}
@@ -29,10 +31,19 @@ const WayWrapper = styled.div`
   align-items: flex-start;
   margin: 20px 0px;
   gap: 20px;
+  width: 100%; /* Wrapper도 전체 폭 사용 */
 `;
 
 const Way = styled.div`
   display: flex;
   flex-direction: column;
   text-align: left;
+  width: 100%; /* 부모 폭 전체 사용 */
+`;
+
+const Divider = styled.hr`
+  width: 100%;
+  max-width: 450px;
+  border: 1px solid #d0b15b;
+  margin-top: 8px;
 `;

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import data from 'data.json';
-import { BrideAndGroom } from '@/types/data.ts';
+import { BrideAndGroom } from '@/types/data';
 
 const Host = () => {
   const { groom, bride } = data.greeting.host;
@@ -42,13 +42,12 @@ const HostInfo = ({ person }: { person: BrideAndGroom }) => {
 const HighlightedName = styled.span`
   font-weight: 600;
   font-size: 1.1rem;
-  color: #4f4f4f;
   margin-right: 5px;
 `;
 
 const HostContainer = styled.div`
   gap: 8px;
-  font-family: SUITE-Regular, serif;
+  font-family: Suit-normal, serif;
 `;
 
 const HostDetails = styled.div`

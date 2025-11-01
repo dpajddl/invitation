@@ -1,16 +1,19 @@
 import styled from '@emotion/styled';
 import data from 'data.json';
-import Host from '../Contact/Host.tsx';
-//import RoundButton from '@/components/RoundButton.tsx';
-import { Caption, Paragraph } from '@/components/Text.tsx';
+import Host from '../Contact/Host'; 
+// import RoundButton from '@/components/RoundButton';
+import { Caption, Paragraph } from '@/components/Text';
+
 
 const Invitation = () => {
   const { greeting } = data;
   return (
     <InvitationWrapper>
+      <hr style={{ width: '90%', maxWidth: '450px', border: '1px solid #d0b15b' }} />
       <Paragraph>{greeting.message}</Paragraph>
       <Host />
-      <Caption textAlign={'center'}>{greeting.eventDetail}</Caption>
+      
+      {/* <Caption textAlign={'center'}>{greeting.eventDetail}</Caption> */}
       {/* TODO: 구글캘린더 추가하기 기능을 넣는다면 링크 수정 */}
       {/*
 <RoundButton
