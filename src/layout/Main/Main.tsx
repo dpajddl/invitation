@@ -7,8 +7,10 @@ const Main = () => {
   return (
     <div>
       <MainImg src={mainImg} />
-      <MainTitle>{greeting.title}</MainTitle>
+      
+      <hr style={{ width: '60%', maxWidth: '420px', border: '1.1px solid #d0b15b' }} />
       <SubTitle>{greeting.eventDetail}</SubTitle>
+      <hr style={{ width: '60%', maxWidth: '420px', border: '1.1px solid #d0b15b' }} />
     </div>
   );
 };
@@ -20,30 +22,32 @@ const MainImg = styled.img`
   width: 90%;
   max-width: 450px;
   padding-top: 20px;
+  margin-bottom: 20px;
 
   /* 모바일 대응 */
   @media screen and (max-width: 500px) {
     width: 100%;
     border-radius: 150px 150px 0 0;
     padding-top: 10px;
+    margin-bottom: 20px;
   }
 `;
 
-const MainTitle = styled.p`
-  font-family: GabiaSai;
-  font-size: 2rem;
-  color: #2F2120;
-  line-height: 120%;
-  white-space: pre-line;
-  @media screen and (max-width: 500px) {
-    font-size: 1.5em;
-  }
+// const MainTitle = styled.p`
+//   font-family: GabiaSai;
+//   font-size: 2rem;
+//   color: #2C2C2C;
+//   line-height: 120%;
+//   white-space: pre-line;
+//   @media screen and (max-width: 500px) {
+//     font-size: 1.5em;
+//   }
 
-`;
+// `;
 
 const SubTitle = styled.p`
-  font-size: 1.1rem;
-  color: #2F2120;
+  font-size: 1rem;
+  color: #2C2C2C;
   line-height: 140%;
   white-space: pre-line;
   @media screen and (max-width: 500px) {

@@ -9,7 +9,7 @@ const Invitation = () => {
   const { greeting } = data;
   return (
     <InvitationWrapper>
-      <hr style={{ width: '90%', maxWidth: '450px', border: '1px solid #d0b15b' }} />
+      
       <Paragraph>{greeting.message}</Paragraph>
       <Host />
       
