@@ -1,5 +1,5 @@
 body {
-  font-family: Kkukkukk,Suit-700,Inter, WorkSans,CucumberSalad,system-ui,
+  font-family: GowoonDodum,Suit-700,Inter, WorkSans,CucumberSalad,system-ui,
     Helvetica, Arial,Worksans;
   line-height: 1.5;
   font-weight: 400;
@@ -22,12 +22,7 @@ body {
 
 
 
-@font-face {
-  font-family: 'Kkukkukk';
-  src: url('./assets/font/Kkukkukk.otf') format('opentype'); /* TTF면 'truetype' */
-  font-weight: normal;
-  font-style: normal;
-}
+
 
 @font-face {
   font-family: 'Suit-700';
@@ -59,3 +54,11 @@ body {
   font-display: swap;
 }
 
+
+
+@font-face {
+  font-family: 'GowoonDodum';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+  font-weight: normal;
+  font-display: swap;
+}

@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 export const Heading12 = styled.p`
-  font-family: Kkukkukk, serif;
+  font-family: GowoonDodum, serif;
   font-size: 2rem;
   margin: 10px;
   color: #2C2C2C;
@@ -9,7 +9,7 @@ export const Heading12 = styled.p`
 `;
 
 export const Heading1 = styled.p`
-  font-family: Kkukkukk, serif;
+  font-family: GowoonDodum, serif;
   font-size: 1.5rem;
   margin: 30px;
   color: #2C2C2C;
@@ -29,7 +29,7 @@ export const Heading2 = styled.p`
 `;
 
 export const PointTitle = styled.p`
-  font-family: Kkukkukk, serif;
+  font-family: GowoonDodum, serif;
   font-size: 1.1rem;
   line-height: 1;
   margin: 0;
@@ -43,7 +43,7 @@ export const Paragraph = styled.p`
 `;
 
 export const Caption = styled.p<{ textAlign?: string }>`
-font-family: Kkukkukk, serif;
+font-family: GowoonDodum, serif;
   font-size: 1rem;
   font-weight: 200;
   text-align: ${(props) => (props.textAlign ? props.textAlign : 'start')};

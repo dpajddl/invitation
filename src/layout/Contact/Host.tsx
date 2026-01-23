@@ -47,7 +47,7 @@ const HighlightedName = styled.span`
 
 const HostContainer = styled.div`
   gap: 8px;
-  font-family: Kkukkukk, serif;
+  font-family: GowoonDodum, serif;
 `;
 
 const HostDetails = styled.div`

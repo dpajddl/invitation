@@ -46,7 +46,7 @@ function App() {
       </Helmet>
 
       <Container>
-      <MusicPlayer />
+      <MusicPlayer/>
         <Wrapper>
           <Main />
         </Wrapper>
