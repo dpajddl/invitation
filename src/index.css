@@ -1,6 +1,6 @@
 body {
-  font-family: GowoonDodum,Suit-700,Inter, WorkSans,CucumberSalad,system-ui,
-    Helvetica, Arial,Worksans;
+  font-family: Pretendard,Campton,Pretendard2,Suit-700,Inter,CucumberSalad,system-ui,
+    Helvetica, Arial;
   line-height: 1.5;
   font-weight: 400;
 
@@ -17,7 +17,7 @@ body {
   min-width: 280px;
   display: flex;
   justify-content: center;
-  background-color: #f5f1dc;
+  background-color: #f3f1ea;
 }
 
 
@@ -39,13 +39,6 @@ body {
     font-display: swap;
 }
 
-@font-face {
-  font-family: 'WorkSans';
-  src: url('https://fonts.gstatic.com/s/worksans/v12/QGYsz_wNahGAdqQ43Rh_fKdp.woff2') format('woff2');
-  font-weight: 400; /* normal */
-  font-style: bold;
-  font-display: swap;
-}
 
 @font-face {
   font-family: 'CucumberSalad';
@@ -56,9 +49,23 @@ body {
 
 
 
+
 @font-face {
-  font-family: 'GowoonDodum';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
-  font-weight: normal;
+  font-family: 'Pretendard2';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Campton";
+  src: url("./assets/font/CamptonMedium.otf") format("opentype");
   font-display: swap;
 }

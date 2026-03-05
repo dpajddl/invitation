@@ -1,16 +1,45 @@
 import styled from '@emotion/styled';
-import data from 'data.json';
-import mainImg from '@/assets/images/05.jpg'
+import mainImg from '@/assets/images/01.jpg'
+import { useEffect, useRef, useState } from "react";
+
+function useScrollFadeIn() {
+  const ref = useRef(null);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    if (ref.current) observer.observe(ref.current);
+
+    return () => observer.disconnect();
+  }, []);
+
+  return { ref, visible };
+}
 
 const Main = () => {
-  const { greeting } = data;
+
+  const { ref, visible } = useScrollFadeIn();
   return (
     <div>
+       
+       <SubTitle2>we are getting married!</SubTitle2>
+       <SubTitle3>저희 결혼식에 초대합니다</SubTitle3>
       <MainImg src={mainImg} />
       
-      <hr style={{ width: '60%', maxWidth: '420px', border: '1.1px solid #d0b15b' }} />
-      <SubTitle>{greeting.eventDetail}</SubTitle>
-      <hr style={{ width: '60%', maxWidth: '420px', border: '1.1px solid #d0b15b' }} />
+      
+      <FadeUp ref={ref} className={visible ? "show" : ""}>
+  
+</FadeUp>
+     
+  
     </div>
   );
 };
@@ -18,39 +47,65 @@ const Main = () => {
 export default Main;
 
 const MainImg = styled.img`
-  border-radius: 200px 200px 0 0;
+ 
   width: 90%;
   max-width: 450px;
   padding-top: 20px;
   margin-bottom: 20px;
+  
 
   /* 모바일 대응 */
   @media screen and (max-width: 500px) {
-    width: 100%;
-    border-radius: 150px 150px 0 0;
+    width: 90%;
+
     padding-top: 10px;
     margin-bottom: 20px;
   }
 `;
 
-// const MainTitle = styled.p`
-//   font-family: GabiaSai;
-//   font-size: 2rem;
-//   color: #2C2C2C;
-//   line-height: 120%;
-//   white-space: pre-line;
-//   @media screen and (max-width: 500px) {
-//     font-size: 1.5em;
-//   }
+const FadeUp = styled.div`
+opacity: 0;
+transform: translateY(60px);
+transition: opacity 2s ease, transform 2s ease;
 
-// `;
+&.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+`;
 
-const SubTitle = styled.p`
-  font-size: 1rem;
+
+
+
+
+
+const SubTitle2 = styled.p`
+font-family: Campton;
+  font-size: 1.1rem;
   color: #2C2C2C;
-  line-height: 140%;
+  line-height: 100%;
   white-space: pre-line;
+  margin-bottom: 4px;   /* 👈 여기 줄이기 */
+  margin-top: 50px;
+
   @media screen and (max-width: 500px) {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
+    margin-top: 60px;
+    margin-bottom: 4px;   /* 👈 여기 줄이기 */
+  }
+  `;
+
+  const SubTitle3 = styled.p`
+  font-family: Pretendard;
+  font-size: 1.1rem;
+  color: #2C2C2C;
+  line-height: 100%;
+  white-space: pre-line;
+  margin-top: 0;   /* 👈 기본 margin 제거 */
+  margin-bottom: 30px;
+  @media screen and (max-width: 500px) {
+    font-size: 1.1rem;
+    margin-top: 0;   /* 👈 기본 margin 제거 */
+    margin-bottom: 30px;
   }
 `;

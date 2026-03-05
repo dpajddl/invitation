@@ -41,7 +41,7 @@ const GuestBookWrapper = styled.div`
 `;
 
 const OpenFormButton = styled.button`
-font-family: GowoonDodum, serif;
+font-family: Pretendard;
   padding: 10px 20px;
   border-radius: 6px;
   border: 1px solid #ccc;
@@ -63,7 +63,7 @@ const ModalBackground = styled.div`
 `;
 
 const ModalContent = styled.div`
-font-family: GowoonDodum, serif;
+font-family: Pretendard;
   background: #fff;
   padding: 20px;
   border-radius: 12px;

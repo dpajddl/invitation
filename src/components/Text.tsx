@@ -1,15 +1,25 @@
 import styled from '@emotion/styled';
 
 export const Heading12 = styled.p`
-  font-family: GowoonDodum, serif;
-  font-size: 2rem;
+  font-family: Campton;
+  font-size: 1.4rem;
   margin: 10px;
   color: #2C2C2C;
   white-space: pre-line;
+  letter-spacing: 0.07em;
+`;
+
+export const Heading13 = styled.p`
+  font-family: Pretendard;
+  font-size: 1.4rem;
+  margin: 10px;
+  color: #2C2C2C;
+  white-space: pre-line;
+  letter-spacing: 0.07em;
 `;
 
 export const Heading1 = styled.p`
-  font-family: GowoonDodum, serif;
+  font-family: Campton;
   font-size: 1.5rem;
   margin: 30px;
   color: #2C2C2C;
@@ -18,6 +28,7 @@ export const Heading1 = styled.p`
 
 
 export const Heading2 = styled.p`
+font-family: Campton;
   font-size: 1rem;
   margin: 10px;
   white-space: pre-line;
@@ -29,7 +40,7 @@ export const Heading2 = styled.p`
 `;
 
 export const PointTitle = styled.p`
-  font-family: GowoonDodum, serif;
+  font-family: Pretendard;
   font-size: 1.1rem;
   line-height: 1;
   margin: 0;
@@ -43,7 +54,7 @@ export const Paragraph = styled.p`
 `;
 
 export const Caption = styled.p<{ textAlign?: string }>`
-font-family: GowoonDodum, serif;
+font-family: Pretendard;
   font-size: 1rem;
   font-weight: 200;
   text-align: ${(props) => (props.textAlign ? props.textAlign : 'start')};

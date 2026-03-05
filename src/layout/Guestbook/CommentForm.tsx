@@ -82,7 +82,7 @@ box-sizing: border-box;
 `;
 
 const NameInput = styled.input`
-font-family: GowoonDodum, serif;
+font-family: Pretendard;
 width: 100%;            /* 폼 너비 안에서 꽉 차게 */
 box-sizing: border-box;
 padding: 10px;
@@ -92,7 +92,7 @@ font-size: 16px;
 `;
 
 const MessageInput = styled.textarea`
-font-family: GowoonDodum, serif;
+font-family: Pretendard;
 width: 100%;
 height: 80px;
 box-sizing: border-box;
@@ -104,7 +104,7 @@ font-size: 16px;
 `;
 
 const PasswordInput = styled.input`
-font-family: GowoonDodum, serif;
+font-family: Pretendard;
 width: 100%;
 box-sizing: border-box;
 padding: 10px;

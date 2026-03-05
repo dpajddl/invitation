@@ -72,5 +72,5 @@ const MusicButton = styled.button`
   cursor: pointer;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   /* 폰트 이름이 정확한지 index.css와 대조해보세요 */
-  font-family: 'Kkukkukk', sans-serif; 
+  font-family: 'Campton', sans-serif; 
 `;

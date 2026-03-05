@@ -30,7 +30,8 @@
     "react-helmet-async": "^2.0.5",
     "react-kakao-maps-sdk": "^1.2.0",
     "react-photoswipe-gallery": "^2.2.7",
-    "styled-components": "^6.3.8"
+    "styled-components": "^6.3.8",
+    "vite-plugin-imagemin": "^0.6.1"
   },
   "devDependencies": {
     "@types/node": "^20.10.6",

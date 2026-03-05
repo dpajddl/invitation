@@ -12,6 +12,7 @@ const Invitation = () => {
       
       <Paragraph>{greeting.message}</Paragraph>
       <Host />
+      <SubTitle>{greeting.eventDetail}</SubTitle>
       
       {/* <Caption textAlign={'center'}>{greeting.eventDetail}</Caption> */}
       {/* TODO: 구글캘린더 추가하기 기능을 넣는다면 링크 수정 */}
@@ -34,4 +35,16 @@ const InvitationWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 20px;
+`;
+
+
+const SubTitle = styled.p`
+  font-size: 1rem;
+  color: #2C2C2C;
+  line-height: 140%;
+  white-space: pre-line;
+  margin-top : 80px;
+  @media screen and (max-width: 500px) {
+
+  }
 `;

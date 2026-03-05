@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-import { Heading12 } from '@/components/Text';
+import { Heading12,Heading13 } from '@/components/Text';
 import Wrapper from '@/components/Wrapper';
 import Account from '@/layout/Account/Account';
 import Container from '@/layout/Container';
@@ -12,6 +12,8 @@ import Location from '@/layout/Location/Location';
 import Main from '@/layout/Main/Main';
 import Bottom from '@/layout/Bottom/Bottom';
 import MusicPlayer from '@/layout/Music/MusicPlayer';
+import Reveal from "@/components/Reveal";
+
 
 function App() {
   const [isVisible, setIsVisible] = useState(false);
@@ -32,6 +34,7 @@ function App() {
       setIsVisible(scrollPosition >= offsetTop);
     }
   };
+  
 
   return (
     <HelmetProvider>
@@ -47,27 +50,43 @@ function App() {
 
       <Container>
       <MusicPlayer/>
+
+
         <Wrapper>
           <Main />
         </Wrapper>
         <Wrapper>
-          <Invitation />
+          <Reveal>
+            <Heading12>INVITATION</Heading12>
+            <Invitation />
+          </Reveal>
         </Wrapper>
         <Wrapper ref={galleryRef}>
-          <Heading12>Gallery</Heading12>
-          <GalleryWrap />
+          <Reveal>
+            <Heading12>MOMENTS</Heading12>
+            </Reveal>
+            <GalleryWrap />
+        
         </Wrapper>
         <Wrapper>
+         <Reveal>
           <Heading12>Location</Heading12>
+          </Reveal>
           <Location />
+          
         </Wrapper>
         <Wrapper>
-          <Heading12>신랑 신부에게</Heading12>
+          <Reveal>
+          <Heading13>신랑 신부에게</Heading13>
           <Guestbook />
+          </Reveal>
         </Wrapper>
         <Wrapper>
-          <Heading12>마음 전하실 곳</Heading12>
+          <Reveal>
+          <Heading13>마음 전하실 곳</Heading13>
+          </Reveal>
           <Account />
+         
         </Wrapper>
         <Wrapper>
           <Bottom />
