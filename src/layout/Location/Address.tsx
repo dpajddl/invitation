@@ -39,11 +39,12 @@ const Way = styled.div`
   flex-direction: column;
   text-align: left;
   width: 100%; /* 부모 폭 전체 사용 */
+  ffont-family: Pretendard3;
 `;
 
 const Divider = styled.hr`
   width: 100%;
   max-width: 450px;
-  border: 1px solid #d0b15b;
+  border: 1px solid #c9c6bd;
   margin-top: 8px;
 `;

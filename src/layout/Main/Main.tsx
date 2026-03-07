@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import mainImg from '@/assets/images/01.jpg'
+import mainImg from '@/assets/images/01.webp'
 import { useEffect, useRef, useState } from "react";
 
 function useScrollFadeIn() {
@@ -32,7 +32,7 @@ const Main = () => {
        
        <SubTitle2>we are getting married!</SubTitle2>
        <SubTitle3>저희 결혼식에 초대합니다</SubTitle3>
-      <MainImg src={mainImg} />
+       <MainImg src={mainImg} />
       
       
       <FadeUp ref={ref} className={visible ? "show" : ""}>
