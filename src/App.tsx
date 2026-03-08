@@ -3,6 +3,7 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { Heading12,Heading13 } from '@/components/Text';
 import Wrapper from '@/components/Wrapper';
 import Account from '@/layout/Account/Account';
+import Calendar from '@/layout/Calendar/Calendar';
 import Container from '@/layout/Container';
 import FloatingBar from '@/layout/FloatingBar/FloatingBar';
 import GalleryWrap from '@/layout/Gallery/GalleryWrap';
@@ -59,6 +60,12 @@ function App() {
           <Reveal>
             <Heading12>INVITATION</Heading12>
             <Invitation />
+          </Reveal>
+        </Wrapper>
+
+        <Wrapper>
+          <Reveal>
+            <Calendar />
           </Reveal>
         </Wrapper>
         <Wrapper ref={galleryRef}>
