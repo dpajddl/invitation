@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import mainImg from '@/assets/images/33.webp'
+import mainImg from '@/assets/images/01.webp'
 import { useEffect, useRef, useState } from "react";
 
 function useScrollFadeIn() {
