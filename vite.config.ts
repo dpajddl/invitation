@@ -15,6 +15,6 @@
           quality: 60
         }
       })],
-    base: '/invitation/',
+    base: '/',
   });
   
