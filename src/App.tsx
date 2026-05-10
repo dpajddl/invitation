@@ -42,7 +42,7 @@ function App() {
       <Helmet>
         <title>규승 ♡ 예원 결혼합니다</title>
         <meta name="description" content="2026년 8월 29일 (토) 12:30 GRC 1층 아산홀" />
-        <meta property="og:url" content="https://gyuseungs2yewon.kr/" />
+        <meta property="og:url" content="https://dpajddl.github.io/invitation/" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="규승 ♡ 예원 결혼합니다" />
         <meta property="og:description" content="2026년 8월 29일 (토) 12:30 GRC 1층 아산홀" />
