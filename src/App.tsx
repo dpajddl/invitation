@@ -56,7 +56,7 @@ function App() {
         <Wrapper>
           <Main />
         </Wrapper>
-        <Wrapper>
+        <Wrapper ref={galleryRef}>
           <Reveal>
             <Heading12>INVITATION</Heading12>
             <Invitation />
@@ -68,7 +68,7 @@ function App() {
             <Calendar />
           </Reveal>
         </Wrapper>
-        <Wrapper ref={galleryRef}>
+        <Wrapper >
           <Reveal>
             <Heading12>MOMENTS</Heading12>
             </Reveal>
