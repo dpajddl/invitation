@@ -46,7 +46,7 @@ function App() {
         <meta property="og:type" content="website" />
         <meta property="og:title" content="규승 ♡ 예원 결혼합니다" />
         <meta property="og:description" content="2026년 8월 29일 (토) 12:30 GRC 1층 아산홀" />
-        <meta property="og:image" content="https://dpajddl.github.io/invitation/thumbnail.jpg" />
+        <meta property="og:image" content="https://dpajddl.github.io/thumbnail.jpg" />
       </Helmet>
 
       <Container>
