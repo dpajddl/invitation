@@ -56,7 +56,7 @@ function App() {
         <Wrapper>
           <Main />
         </Wrapper>
-        <Wrapper ref={galleryRef}>
+        <Wrapper >
           <Reveal>
             <Heading12>INVITATION</Heading12>
             <Invitation />
